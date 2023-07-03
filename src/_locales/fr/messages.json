@@ -1,0 +1,10 @@
+{
+    "extDescription": {
+        "description": "Description for this extension, will be displayed in web store",
+        "message": "Gestionnaire de script utilisateur avec les meilleurs outils de développement et support pour de nombreuses langues différentes."
+    },
+    "extName": {
+        "description": "Name of this extension.",
+        "message": "WebWeaver"
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "manifest_version": 3,
+    "name": "__MSG_extName__",
+    "version": "1.0.0",
+    "description": "__MSG_extDescription__",
+    "author": "Jeff",
+    "default_locale": "en",
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "webRequest",
+        "notifications",
+        "storage",
+        "unlimitedStorage",
+        "clipboardWrite",
+        "cookies"
+    ],
+    "background": {
+        "service_worker": "./background/background.js"
+    },
+    "action": {
+        "default_popup": "./popup/popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["./content/content.js"]
+        }
+    ],
+    "options_ui": {
+        "page": "./options/options.html",
+        "open_in_tab": true
+    },
+    "web_accessible_resources": [{
+        "resources": ["common/package/min/*"],
+        "matches": ["<all_urls>"]
+    }]
+}

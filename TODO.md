@@ -1,0 +1,3 @@
+- Load npm packages from a URL using [Skypack](https://www.skypack.dev/)
+- Use [Monaco](https://microsoft.github.io/monaco-editor/) for the editor
+- VSCode themes
